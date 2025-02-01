@@ -57,3 +57,37 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Updating to latest Angular 18
+
+This app is now on Angular 18.
+
+### update app to latest Angular 18
+
+`ng update @angular/cli@18 @angular/core@18`
+
+### update from older Angular versions to the latest
+
+Follow the instructions in the [Angular Update Guide](https://update.angular.io/) to fix your app.
+
+Please note that then the --force flag is mostly required to be sure that the update command runs even if there are dependency conflicts for thirth party libraries.
+
+### standalone components
+
+You can switch older Angular programs to standalone with `ng generate @angular/core:standalone`
+
+#### npm outdated
+
+In terminal use `npm outdated` to see what packages are requiring updates and what their current and wanted versions are.
+
+This will also show you which packages are deprecated.
+
+If you want to update a package to a version newer than what is specified in your package.json, you can do so by running npm update [package-name]@[version-number].
+
+### vulnerabilities
+
+In terminal use `npm audit fix` to automatically install compatible updates to vulnerable dependencies.
+
+You can first run `npm audit` to see vulnerabilities in your project for one or more packages.
+
+Run `npm ls [package-name]` to see which packages depend on the vulnerable package.

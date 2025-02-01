@@ -58,13 +58,13 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-## Updating to latest Angular 18
+## Updating to latest Angular 19
 
-This app is now on Angular 18.
+This app is now on Angular 19.
 
-### update app to latest Angular 18
+### update app to latest Angular 19
 
-`ng update @angular/cli@18 @angular/core@18`
+`ng update @angular/cli@19 @angular/core@19`
 
 ### update from older Angular versions to the latest
 

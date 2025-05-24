@@ -2,11 +2,9 @@
   <div class="input-group">
     <p>
       <label for="initial-investment">Initial Investment</label>
-      <!-- for refers to the 'id' of the input element
-           'name' is used to identify the input element in the form -->
+      <!-- 'name' is required to identify the input element of the ngModel in the form -->
       <input
         type="number"
-        id="initial-investment"
         name="initial-investment"
         [(ngModel)]="enteredInitialInvestment"
       />
@@ -15,7 +13,6 @@
       <label for="annual-investment">Annual Investment</label>
       <input
         type="number"
-        id="annual-investment"
         name="annual-investment"
         [(ngModel)]="enteredAnnualInvestment"
       />
@@ -26,19 +23,13 @@
       <label for="expected-return">Expected Return</label>
       <input
         type="number"
-        id="expected-return"
         name="expected-return"
         [(ngModel)]="enteredExpectedReturn"
       />
     </p>
     <p>
       <label for="duration">Duration</label>
-      <input
-        type="number"
-        id="duration"
-        name="duration"
-        [(ngModel)]="enteredDuration"
-      />
+      <input type="number" name="duration" [(ngModel)]="enteredDuration" />
     </p>
   </div>
   <p>
